@@ -1,63 +1,121 @@
 * {
-    margin: o;
-    padding: 0;
-    box-sizing: border-box;  /* To use Box Model*/
+  margin: o;
+  padding: 0;
+  box-sizing: border-box; /* To use Box Model*/
 }
 
 body {
-    font-family: 'Merriweather', serif;
-    background-color: #ebf2ff;
+  font-family: "Merriweather", serif;
+  background-color: #ebf2ff;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #fff;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
 }
 
 .navbar_brand {
-    width: 100px;
+  width: 100px;
 }
 
 .navbar_logo {
-    width: 100%;
+  width: 100%;
 }
 
 .nav_item {
-    background-image: linear-gradient(
-        to right,
-        #ff512f 0%,
-        #dd2476 51%,
-        #ff512f 100%
-    );
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
 
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 6px;
-    cursor: pointer;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
+.button_primary {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero_image_container {
+  width: 100%;
+}
+
+.hero_image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+
+.hero_text {
+    font-size: 50px;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0px 20px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-    .navbar {
-        justify-content: space-between;
-        padding: 2px 30px;
-    }
+  .navbar {
+    justify-content: space-between;
+    padding: 2px 30px;
+  }
+
+  .hero_container {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-top: 20px;
+  }
 }
 
 @media (min-width: 1020px) {
-    .navbar_brand {
-        width: 150px;
-    }
-    .nav_item {
-        padding: 20px;
-        font-size: 20px;
-    }
+  .navbar_brand {
+    width: 150px;
+  }
+  .button_primary {
+    padding: 20px;
+    font-size: 20px;
+  }
+  .hero_description {
+      width: 100%;
+  }
+  .container {
+      max-width:900px;
+  }
 }
 
 .nav_item:hover {
-    border: 2px solid pink;
+   
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1250px;
+    }
+}
+
+.nav_item button_primary:hover {
+background-color: black;
 }
